@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Test blog"
+date:   2020-07-07 17:11:40 +0700
+categories: test
+---
+# Test Section 1
+# Test Section 2
