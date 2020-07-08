@@ -30,12 +30,10 @@ $(function() {
   while (tokens = re.exec(queryString)) {
       params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
   }
-  console.log(params.category)
   
   
   if (params.category !== undefined) {
     $('.content').each(function() {
-      console.log(this)
       if (!$(this).attr('class').includes(params.category)){
         $(this).remove()
       }
