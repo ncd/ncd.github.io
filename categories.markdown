@@ -1,5 +1,6 @@
 ---
 layout: default
+title: category
 ---
 {% for post in site.posts %}
 {% if post.title != null %}
