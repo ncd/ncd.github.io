@@ -68,10 +68,16 @@
         </ul>
       </nav>
       <section>
-        <h1 id="title" style="text-align:center;">{{ page.title}}</h1>
-        <hr class="dashed">
+        <div style="display: flex; align-items: center">
+          <h1 id="title" style="text-align:center; flex-grow: 2;">{{ page.title}}</h1>
+          <a style="text-align: center; flex-shrink: 1;" href="{{ site.url }}/categories.html">Home</a>
+        </div>
+        <hr>
         {{ content }}
-
+        <div style="display: flex; justify-content: center;">
+          <a style="text-align:center; flex-grow: 2;" onclick="goTop()">Top</a>
+          <a style="text-align: center; flex-shrink: 1;" href="{{ site.url }}/categories.html">Home</a>
+        </div>
       </section>
       <nav class="section">
         <ul>

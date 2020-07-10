@@ -10,8 +10,10 @@ var sectionHeight = function() {
   }
 }
 
-var fillForm = function () {
-} ();
+function goTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 $(window).resize(sectionHeight);
 

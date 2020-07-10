@@ -8,9 +8,11 @@ title: About me
 <span style="font-weight: bold; font-style: italic"> Master of Engineering </span><br/> 
 <span style="font-weight: bold">Solution Architect at Fossil Inc.</span>
 </div>
-  
+
+---
+
 ## About me
-&nbsp;&nbsp;&nbsp;&nbsp;Got my ***Master's Degree*** in Computer Science from the University Of Technology in 2013.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Got my ***Master's Degree*** in Computer Science from the University Of Technology in 2013.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***+10 years of experience*** in Software development.
 
@@ -43,5 +45,12 @@ title: About me
 - **Monitoring:** Prometheus, Grafana, Alert Manager, Jeager, Sentry
 - **Misc:** redis, draw.io
 
+---
 
+## Posts
 
+{% for post in site.posts %}
+{% if post.title != null %}
+[{{ post.title }}]({{ site.url }}{{ post.url }})   
+{%- endif -%}
+{%- endfor -%}

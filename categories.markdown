@@ -4,13 +4,19 @@ title: category
 ---
 {% for post in site.posts %}
 {% if post.title != null %}
-# {{ post.title }} 
-{: .{{ post.categories | join: " ." }} .content}
+{% assign class = post.categories | join: " " %}
+<div class="{{ class }} content" markdown="1">
+
+## [{{ post.title }}]({{ site.url }}{{ post.url }})
+
+<span style="font-weight: bold">Categories: </span> {%- for category in post.categories -%}
+[{{ category }}]({{ site.url }}/categories?category={{ category }}) 
+{% endfor %}
+
 {{ post.description }}
-{: .{{ post.categories | join: " ." }} .content}
-[Click for more detail]({{ site.url }}{{ post.url }})
-{: .{{ post.categories | join: " ." }} .content}
+
 ---
-{: .{{ post.categories | join: " ."}} .content}
+
+</div>
 {% endif %}
 {% endfor %}
