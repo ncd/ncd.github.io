@@ -50,7 +50,7 @@ title: About me
 ## Posts
 
 {% for post in site.posts %}
-{% if post.title != null %}
-[{{ post.title }}]({{ site.url }}{{ post.url }})   
-{%- endif -%}
+{%- if post.title != null -%}
+&nbsp;&nbsp;[{{ post.title }}]({{ site.url }}{{ post.url }})  
+{% endif %}
 {%- endfor -%}

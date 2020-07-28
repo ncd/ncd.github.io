@@ -4,7 +4,7 @@ title: "My first ever blog"
 description: >-
   My story about creating my first ever blog
 date: 2020-07-06 22:48:40 +0700
-categories: story 
+categories: Story 
 ---
 
 ## Context
@@ -28,7 +28,7 @@ categories: story
 
 ## Set up Github Page using Jekyll
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*First,* set up the environment. It's very simple, go to [this link](https://jekyllrb.com/docs/installation/) and follow exactly what they sad.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*First,* set up the environment. It's very simple, go to [this link](https://jekyllrb.com/docs/installation/) and follow exactly what they said.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After finish your first blog will look like:
 
 ![First page]({{ site.url}}/assets/images/jekyll_set_up_1.png)
@@ -53,7 +53,7 @@ categories: story
 ```
 {% endraw %}
 
-- Create right float bar to automatically list header tags and navigate between them. It will be used as the <span style="background: lightgray; font-weight: bold">table of content</span>.
+- Create right float bar to automatically list header tags and navigate between them. It will be used as the `table of content`.
   - Add a place holder for the right bar  
   
   ``` html
