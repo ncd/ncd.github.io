@@ -151,6 +151,8 @@ Node selection have **2** steps:
   ```
 - **Taint and toleration**
   - Taint use in node to repel a set of Pods
+    - Format: `<taintKey>=<taintValue>:<taintEffect>`
+    - Effect: `NoSchedule`, `PreferNoSchedule`, `NoExecute`
   - Toleration use in pod to schedule on Node with matching taints
   
   Add taint
